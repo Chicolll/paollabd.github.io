@@ -184,6 +184,7 @@
     /*center-aligning the text*/
     top: 50%;
     left: 50%;
+    text-align: center;
     /*TRANSFORM: repositions an element in the horizontal and/or vertical directions*/
     /*property moving text in the negative direction of x and y*/
     /*here, it repositions the text, "animating" it according to the motion the overlay*/

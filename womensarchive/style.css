@@ -71,6 +71,7 @@
     z-index: 3;
 }
 
+
 #SportsCircle{
     position: absolute;
     width: 140px;
@@ -351,3 +352,22 @@
     flex: 1;
     order: 1;
 }*/
+
+
+/*ADDED POST MIDTERM DEADLINE*/
+
+ #ScienceCircle:hover{
+        width: 210px;
+ }
+  #ArtsCircle:hover{
+        width: 180px;
+ }
+ #SocialCircle:hover{
+        width: 160px;
+ }
+  #PoliticsCircle:hover{
+        width: 210px;
+ }
+ #SportsCircle:hover{
+        width: 150px;
+ }

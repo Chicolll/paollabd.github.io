@@ -9,14 +9,145 @@
     color: white;
 }
 
+
+@media only screen and (max-width: 600px) {
+    #home{
+        display: None;
+    }
+
+    .container:active .overlay{
+        pointer-events: none;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    div{
+        background-color: #FFAC00;
+    }
+}
+
+
+/*@media (min-width:600px) {
+    .container img{
+        width: 50px;
+        height: auto;
+    }
+}
+
+@media (min-width:800px) {
+}
+
+@media (min-width:1000px) {
+}*/
+
+
+#home{
+    background-color: white;
+    padding: 50px 20px;
+    height: 800px;
+    background-image: url("Home/background4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .circle{
     position: relative;
     display: block;
 }
 
-/*HOME PAGE ICONS*/
+/*.home-container{
+    display: flex;
+    flex-wrap: wrap;
+}*/
 
 #women-in{
+    position: absolute;
+    width: 25%;
+    height: auto;
+    margin-left: 38%;
+    margin-right: auto;
+    margin-top: 15%;
+    margin-bottom: auto;
+    z-index: 5;
+}
+
+#ScienceCircle{
+    position: absolute;
+    width: 15%;
+    height: auto;
+    margin-left: 29%;
+    margin-right: auto;
+    margin-top: 13%;
+    margin-bottom: auto;
+    z-index: 1;
+}
+
+#ArtsCircle{
+    position: absolute;
+    width: 12%;
+    height: auto;
+    margin-left: 30%;
+    margin-right: auto;
+    margin-top: 25%;
+    margin-bottom: auto;
+    z-index: 6;
+}
+
+#PoliticsCircle{
+    position: absolute;
+    width: 14%;
+    height: auto;
+    margin-left: 54%;
+    margin-right: auto;
+    margin-top: 21%;
+    margin-bottom: auto;
+    z-index: 4;
+}
+
+#SocialCircle{
+    position: absolute;
+    width: 12%;
+    height: auto;
+    margin-left: 62%;
+    margin-right: auto;
+    margin-top: 19%;
+    margin-bottom: auto;
+    z-index: 3;
+}
+
+#SportsCircle{
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-left: 54%;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: auto;
+    z-index: 2;
+}
+
+ #ScienceCircle:hover{
+        width: 16%;
+ }
+  #ArtsCircle:hover{
+        width: 13%;
+ }
+ #SocialCircle:hover{
+        width: 13%;
+ }
+  #PoliticsCircle:hover{
+        width: 15%;
+ }
+ #SportsCircle:hover{
+        width: 11%;
+ }
+
+
+/*HOME PAGE ICONS*/
+
+/*#women-in{
     position: absolute;
     width: 400px;
     height: auto;
@@ -71,7 +202,6 @@
     z-index: 3;
 }
 
-
 #SportsCircle{
     position: absolute;
     width: 140px;
@@ -81,34 +211,40 @@
     margin-top: 70px;
     margin-bottom: auto;
     z-index: 2;
-}
+}*/
 
-/*DIVS*/
+/*ADDED POST MIDTERM DEADLINE*/
 
-#home{
-    background-color: white;
-    padding: 50px 20px;
-    height: 800px;
-    background-image: url("Home/background4.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
+/* #ScienceCircle:hover{
+        width: 210px;
+ }
+  #ArtsCircle:hover{
+        width: 180px;
+ }
+ #SocialCircle:hover{
+        width: 160px;
+ }
+  #PoliticsCircle:hover{
+        width: 210px;
+ }
+ #SportsCircle:hover{
+        width: 150px;
+ }*/
 
 .category{
-    /*display: flex;*/
+    display: flex;
+    flex-wrap: wrap;
     background-color: #282B40;
     padding: 50px 20px;
-    height: 370px;  
+    height: auto;  
 }
 
 #title{
-    /*display: flex;*/
+    margin-left: 15px;
     text-align: center;
     font-weight: bold;
     padding: 10px;
-    width: 200px;
+    width: 150px;
     background-color: #C70039;
     color: white;
     font-family: "Courier New", Courier, monospace;
@@ -137,9 +273,9 @@
 }*/
 
 .container img{
-    /*display: inline-block;*/
     margin-top: auto;
     margin-bottom: auto;
+    /*padding: 2%;*/
     width: 250px;
     height: 250px;    
 }
@@ -147,10 +283,12 @@
 /*IMAGE OVERLAY HOVER*/
 
 .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
     width: 250px;
     height: 250px;
-    /*display: inline-block;*/
 }
 
 .overlay{
@@ -192,10 +330,12 @@
     /*this can be seen better if you change the transition time on line 27 to 2s -- you can see the text moving slowly*/
     transform: translate(-50%, -50%);
     font-size: 15px;
+    font-family: bold;
 }
 
 .subtext{
-    font-size: 10px;
+    font-size: 11px;
+    font-family: bold;
 }
 
 
@@ -204,22 +344,7 @@
 /*SCIENCE*/
 .container1{
     display: flex;
-    /*flex-wrap: wrap;*/
-    
-    /* JUSTIFY-CONTENT: aligns content & adds margins in between boxes */
-    /* default -> align to the left side */
-    /*justify-content: flex-start;*/
-
-    /* aligns to the left side */
-    /*justify-content: flex-end;*/
-
-    /* aligns to the center*/
-    /*justify-content: center;*/
-
-    /* margins in the middle, no margins on the sides*/
-    /*justify-content: space-between;*/
-
-    /* gins in the middle + margins on the sides */
+    flex-wrap: wrap;
     /*justify-content: space-around;*/
 }
 
@@ -247,7 +372,8 @@
 /*ARTS*/
 .container2{
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 }
 
 /*.c2box1{
@@ -275,7 +401,8 @@
 /*POLITICS*/
 .container3{
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 }
 
 /*.c3box1{
@@ -302,7 +429,8 @@
 /*SOCIAL CHANGE*/
 .container4{
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 }
 
 /*.c4box1{
@@ -327,9 +455,11 @@
 }*/
 
 /**/
+
 .container5{
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
 }
 
 /*.c5box1{
@@ -352,22 +482,3 @@
     flex: 1;
     order: 1;
 }*/
-
-
-/*ADDED POST MIDTERM DEADLINE*/
-
- #ScienceCircle:hover{
-        width: 210px;
- }
-  #ArtsCircle:hover{
-        width: 180px;
- }
- #SocialCircle:hover{
-        width: 160px;
- }
-  #PoliticsCircle:hover{
-        width: 210px;
- }
- #SportsCircle:hover{
-        width: 150px;
- }

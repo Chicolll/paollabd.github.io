@@ -27,18 +27,30 @@ document.getElementById("area-button").addEventListener("click", function(){
 function squareNumber(num) {
 	//var num = document.getElementById("square-input").innerHTML;
 	var square = num**2;
-	console.log("The result of squaring the number", num, "is",  square)
+
+	var res = "The result of squaring the number " + num + " is " + square;
+	document.getElementById("solution").innerHTML = res;
+
+	console.log("The result of squaring the number", num, "is",  square);
 	return square;
 }
 
 function halfNumber(num) {
 	var half = num/2;
+
+	var res = "Half of " + num + " is " + half;
+	document.getElementById("solution").innerHTML = res;
+
 	console.log("Half of", num, "is", half);
 	return  half;
 }
 
 function percentOf (num1, num2) {
 	var percent = (100 * num1)/num2;
+
+	var res = num1 + " is " + percent + " % of " + num2;
+	document.getElementById("solution").innerHTML = res;
+
 	console.log(num1, "is", percent + "% of", num2);
 	return percent;
 }
@@ -46,9 +58,10 @@ function percentOf (num1, num2) {
 function areaOfCircle(radius) {
 	var area = Math.PI*(radius**2);
 	var area_rounded = area.toFixed(2);
-	//console.log("The area for a circle with radius", radius, "is", area);
-	//return area;
-	// TWO DECIMAL POINTS
+
+	var res = "The area for a circle with radius " + radius + " is " + area_rounded;
+	document.getElementById("solution").innerHTML = res;
+
 	console.log("The area for a circle with radius", radius, "is", area_rounded);
 	return area_rounded;
 }
